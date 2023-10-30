@@ -22,7 +22,7 @@
     dotnet run --urls "https://localhost:7206"
     ```
 
-🔗 The backend API should now be running on `https://localhost:7206` or a port specified in your configuration. Documentation can be accessed on `https://localhost:7206/swagger`
+The backend API should now be running on `https://localhost:7206` or a port specified in your configuration. Documentation can be accessed on `https://localhost:7206/swagger`
 
 ### Frontend Setup:
 
@@ -41,7 +41,7 @@
     npm run dev
     ```
 
-🌐 The frontend should now be live at `http://localhost:5173`.
+The frontend should now be live at `http://localhost:5173`.
 
 ## Configuration
 
