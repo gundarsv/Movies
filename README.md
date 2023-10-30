@@ -43,7 +43,7 @@
 
 🌐 The frontend should now be live at `http://localhost:5173`.
 
-## ⚙️ Configuration
+## Configuration
 
 - Backend configurations like API key and base URL are located in `appsettings.json`.
 - Adjust frontend API endpoints or other configurations in their respective service.
