@@ -22,7 +22,7 @@
     dotnet run --urls "https://localhost:7206"
     ```
 
-🔗 The backend API should now be running on `https://localhost:7206` or a port specified in your configuration.
+🔗 The backend API should now be running on `https://localhost:7206` or a port specified in your configuration. Documentation can be accessed on `https://localhost:7206/swagger`
 
 ### Frontend Setup:
 
@@ -43,13 +43,7 @@
 
 🌐 The frontend should now be live at `http://localhost:5173`.
 
-## 🛠 Usage
-
-1. **Home Page**: Explore a curated list of movies or navigate to different sections of the app.
-2. **Search**: Use the intuitive search bar to discover movies.
-3. **Recent Searches**: Stay updated with your search history, conveniently located on the right side of the home page.
-
 ## ⚙️ Configuration
 
 - Backend configurations like API key and base URL are located in `appsettings.json`.
-- Adjust frontend API endpoints or other configurations in their respective service or component files.
+- Adjust frontend API endpoints or other configurations in their respective service.
