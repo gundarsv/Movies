@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.13" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="7.0.13" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\JETEch.Movies.Application\JETEch.Movies.Application.csproj" />
+    <ProjectReference Include="..\JETech.Movies.Data\JETech.Movies.Data.csproj" />
+    <ProjectReference Include="..\JETech.Movies.Domain\JETech.Movies.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
