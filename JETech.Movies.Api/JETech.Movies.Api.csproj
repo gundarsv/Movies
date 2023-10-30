@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\JETEch.Movies.Application\JETEch.Movies.Application.csproj" />
+    <ProjectReference Include="..\JETech.Movies.Application\JETech.Movies.Application.csproj" />
     <ProjectReference Include="..\JETech.Movies.Data\JETech.Movies.Data.csproj" />
     <ProjectReference Include="..\JETech.Movies.Domain\JETech.Movies.Domain.csproj" />
   </ItemGroup>
