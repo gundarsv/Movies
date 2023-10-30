@@ -20,9 +20,10 @@ namespace JETech.Movies.Application.Services
 
         public MovieService(HttpClient httpClient, ILogger<MovieService> logger, ISearchQueryService searchQueryService, IOptions<OMDBSettings> settings)
         {
-            _httpClient = httpClient;
-            _logger = logger;
-            _searchQueryService = searchQueryService;
+            _httpClient = httpClient ?? throw new ArgumentNullException(nameof(httpClient));
+            _logger = logger ?? throw new ArgumentNullException(nameof(logger));
+            _searchQueryService = searchQueryService ?? throw new ArgumentNullException(nameof(searchQueryService));
+
             _apiKey = settings.Value.ApiKey;
             _baseUrl = settings.Value.BaseUrl;
         }

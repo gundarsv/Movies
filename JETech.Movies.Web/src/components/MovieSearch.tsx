@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Movie } from '../types/types';
 import MovieList from './MovieList';
-import { fetchRecentSearches, searchMoviesByTitle } from '../services/movieService';
+import { fetchRecentSearches, searchMoviesByTitle } from '../services/MovieService';
 import RecentSearches from './RecentSearches';
 
 const MovieSearch: React.FC = () => {

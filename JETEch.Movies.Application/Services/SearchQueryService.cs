@@ -12,8 +12,8 @@ namespace JETEch.Movies.Application.Services
 
         public SearchQueryService(ISearchQueryRepository searchQueryRepository, ILogger<SearchQueryService> logger)
         {
-            _searchQueryRepository = searchQueryRepository;
-            _logger = logger;
+            _searchQueryRepository = searchQueryRepository ?? throw new ArgumentNullException(nameof(searchQueryRepository));
+            _logger = logger ?? throw new ArgumentNullException(nameof(logger));
         }
 
         public async Task SaveSearchQuery(string title, CancellationToken cancellationToken = default)

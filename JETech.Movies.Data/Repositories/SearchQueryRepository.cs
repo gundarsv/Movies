@@ -10,7 +10,7 @@ namespace JETech.Movies.Data.Repositories
 
         public SearchQueryRepository(MovieSearchContext context)
         {
-            _context = context;
+            _context = context ?? throw new ArgumentNullException(nameof(context));
         }
 
         public async Task SaveAsync(SearchQuery searchQuery, CancellationToken cancellationToken = default)
